@@ -1,0 +1,9 @@
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+*.log
+
+# Carpetas de dependencias (se regeneran con instaladores)
+node_modules/
