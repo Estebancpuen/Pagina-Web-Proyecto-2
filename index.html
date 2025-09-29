@@ -3,13 +3,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Mi primera pagina</title>
+    <title>Mi primera página</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hola, mundo</h1>
-    <p>Mi pagina basica en el repositorio.</p>
+    <h1 id="titulo">Hola, mundo</h1>
+    <p>Mi página básica en el repositorio.</p>
     <button onclick="saludar()">Haz clic</button>
-    <script src="script.js"></script>
+
+    <script>
+        function saludar() {
+            alert("¡Hola desde tu primera página web!");
+            document.getElementById("titulo").innerText = "Texto cambiado con JavaScript 🚀";
+        }
+    </script>
 </body>
 </html>
