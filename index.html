@@ -1,21 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Mi primera página</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Brand</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="titulo">Hola, mundo</h1>
-    <p>Mi página básica en el repositorio.</p>
-    <button onclick="saludar()">Haz clic</button>
+    <!-- Menú superior -->
+    <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#">Shop now</a></li>
+                <li><a href="#">Cleanses</a></li>
+                <li><a href="#">Daily Bundles</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <script>
-        function saludar() {
-            alert("¡Hola desde tu primera página web!");
-            document.getElementById("titulo").innerText = "Texto cambiado con JavaScript 🚀";
-        }
-    </script>
+    <!-- Contenedor principal dividido -->
+    <main class="container">
+        <!-- Bloque izquierdo -->
+        <section class="left-block">
+            <div class="section-info">
+                <h2 class="section-number">01</h2>
+                <h1 class="section-title">RENEW</h1>
+                <p class="section-desc">Una forma fresca de revitalizar tu cuerpo cada día.</p>
+            </div>
+        </section>
+
+        <!-- Bloque derecho -->
+        <aside class="right-block">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">How to consume <span>+</span></button>
+                    <div class="accordion-content">
+                        <p>Consume una botella cada mañana antes del desayuno para mejores resultados.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">Benefits <span>+</span></button>
+                    <div class="accordion-content">
+                        <p>Refuerza tu sistema inmune, mejora la digestión y aporta energía natural.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">Buying options <span>+</span></button>
+                    <div class="accordion-content">
+                        <p>Disponibles en paquetes semanales, mensuales o individuales.</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
