@@ -7,3 +7,6 @@ Thumbs.db
 
 # Carpetas de dependencias (se regeneran con instaladores)
 node_modules/
+
+# Carpeta de Visual Studio
+.vs/
